@@ -30,9 +30,7 @@ describe('createUser', () => {
       email: 'user@test.com',
       password: '123'
     });
-
-    console.log(result)
-    
+   
     expect(result.isLeft).toBe(true);
     expect(result.value.message).toMatch(/Invalid password/);
   });
